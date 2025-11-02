@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Computer Science Student</title>
+    <title>Sojung Shin | Software Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -11,7 +11,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#home" class="logo">Portfolio</a>
+            <a href="#home" class="logo">Sojung Shin</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -31,16 +31,37 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
+                <!-- Profile Image -->
+                <div class="hero-profile">
+                    <img src="profile.jpg" alt="Sojung Shin" class="profile-image">
+                </div>
+                
+                <!-- Hero Text -->
                 <div class="hero-text">
                     <p class="hero-subtitle">Hi, I'm</p>
-                    <h1 class="hero-title">Your Name</h1>
+                    <h1 class="hero-title">Sojung Shin</h1>
                     <p class="hero-visa">Currently on an F-1 visa | eligible for OPT & STEM OPT</p>
                     <p class="hero-description">
                         Building innovative mobile applications and scalable software solutions with a passion for clean code and user-centric design.
                     </p>
+                    
+                    <!-- Buttons -->
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                        <a href="#experience" class="btn btn-primary">View Work</a>
+                        <a href="Sojung_Shin_resume_Mobile_general_updated.pdf" download class="btn btn-secondary">Download Resume</a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="hero-social">
+                        <a href="https://github.com/ninkats" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sojung-shin-cs/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sjscom77@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -57,19 +78,22 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a Computer Science student passionate about mobile development and software engineering. 
-                        With hands-on experience in Flutter and Android development, I specialize in building 
-                        responsive, user-friendly applications that solve real-world problems.
+                        I'm a Computer Science student at The University of Texas at Dallas (GPA 3.95) 
+                        passionate about mobile development and software engineering. With hands-on experience 
+                        in Flutter, Swift, and Android development, I specialize in building responsive, 
+                        user-friendly applications that solve real-world problems.
+                    </p>
+                    <p>
+                        Currently working as a Mobile Developer Intern at Mimosa Networks, I've designed API 
+                        integrations, built 60% of frontend widgets, and developed features like Wi-Fi QR 
+                        scan & auto-connect. Previously at Providential Media Group, I deployed iOS beta apps 
+                        to TestFlight and integrated Firebase to reduce API response time by 25%.
                     </p>
                     <p>
                         My technical journey spans from developing cross-platform mobile apps to implementing 
-                        complex features like WiFi connectivity, location services, and real-time data synchronization. 
-                        I thrive on turning challenging requirements into elegant, efficient solutions.
-                    </p>
-                    <p>
-                        Beyond coding, I'm committed to continuous learning and staying current with the latest 
-                        technologies in mobile development, cloud services, and software architecture. I believe 
-                        in writing maintainable code and creating exceptional user experiences.
+                        complex features like location services, real-time data synchronization, and VR 
+                        interactions. I thrive on turning challenging requirements into elegant, efficient 
+                        solutions and believe in writing maintainable code that creates exceptional user experiences.
                     </p>
                 </div>
             </div>
@@ -79,25 +103,51 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
                 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Present</div>
-                        <h3>Mobile Developer</h3>
-                        <h4>Academic & Personal Projects</h4>
+                        <div class="timeline-date">May 2025 – Present</div>
+                        <h3>Mobile Developer Intern</h3>
+                        <h4>Mimosa Networks</h4>
                         <p>
-                            Developing full-stack Flutter applications with focus on mobile-first design. 
-                            Implementing advanced features including network connectivity, location permissions, 
-                            device management, and real-time data synchronization. Building scalable architectures 
-                            with clean code principles and comprehensive testing.
+                            Designed API integration for Wi-Fi router setup, enabling unified API call logic 
+                            reuse across the app. Built ~60% of frontend common widgets & screens, developed 
+                            Wi-Fi QR scan & auto-connect feature, and implemented camera and location 
+                            permission handling for both Android & iOS platforms.
                         </p>
                         <div class="tech-tags">
                             <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>Android</span>
+                            <span>Xcode</span>
+                            <span>Android Studio</span>
+                            <span>MySQL</span>
+                            <span>SQLite</span>
+                            <span>AWS</span>
+                            <span>Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 2025 – May 2025</div>
+                        <h3>Mobile Developer Intern</h3>
+                        <h4>Providential Media Group</h4>
+                        <p>
+                            Developed 10+ cross-platform frontend pages in SaaS environments. Improved UI 
+                            responsiveness by refactoring button logic for instant reflection. Deployed iOS 
+                            beta app to TestFlight, developed on-device transcoding with FFmpeg, and 
+                            integrated Firebase and REST APIs to reduce API response time by 25%.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Swift</span>
+                            <span>Xcode</span>
+                            <span>TestFlight</span>
+                            <span>Android Studio</span>
+                            <span>Flutter</span>
                             <span>Firebase</span>
                         </div>
                     </div>
@@ -106,20 +156,19 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Academic</div>
-                        <h3>Computer Science Student</h3>
-                        <h4>University</h4>
+                        <div class="timeline-date">August 2024 – May 2025</div>
+                        <h3>Undergraduate Research Assistant</h3>
+                        <h4>Multimodal Interaction Lab – UT Dallas</h4>
                         <p>
-                            Pursuing comprehensive coursework in software engineering, database theory, 
-                            computer architecture, and algorithms. Applying theoretical knowledge to practical 
-                            projects, including mobile app development, database design, and system optimization. 
-                            Actively engaged in research and technical problem-solving.
+                            Developed a VR model in Unity, enhancing interaction fidelity by writing C# 
+                            scripts using event-driven programming with delegates and events of .NET, 
+                            and asynchronous programming with async/await patterns.
                         </p>
                         <div class="tech-tags">
-                            <span>Algorithms</span>
-                            <span>Database Systems</span>
-                            <span>Software Engineering</span>
-                            <span>Computer Architecture</span>
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>Unity</span>
+                            <span>Git</span>
                         </div>
                     </div>
                 </div>
@@ -140,91 +189,125 @@
             
             <div class="projects-grid">
                 
-                <!-- Project 1 -->
+                <!-- Project 1: UFOTech -->
                 <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="projects/ufotech.jpg" alt="UFOTech matching app" class="project-image">
+                        <!-- YouTube Icon Overlay -->
+                        <a href="https://youtube.com/your-video-link" target="_blank" class="youtube-overlay" title="Watch Demo">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
                     <div class="project-header">
-                        <i class="fas fa-mobile-alt project-icon"></i>
+                        <i class="fas fa-users project-icon"></i>
                         <div class="project-links">
-                            <a href="#" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                            <!-- <a href="https://github.com/ninkats/ufotech" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>-->
                         </div>
                     </div>
-                    <h3>Flutter Mobile Application</h3>
+                    <h3>UFOTech Matching App</h3>
+                    <p class="project-period">Fall 2025 • UFOTech Team Corp., CS Project – UT Dallas</p>
                     <p>
-                        Comprehensive mobile application featuring WiFi connectivity management, 
-                        location-based services, and device control. Implemented permission handling, 
-                        real-time status monitoring, and intuitive UI/UX design for seamless user experience.
+                        Developed a mobile web with dual admin/user authentication and profile management 
+                        for up to 16 users per event session. Implemented AI-driven algorithm to prioritize 
+                        interactions based on profile interests, enhancing the relevance of pairings.
+                    </p>
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>REST APIs</span>
+                        <span>AI Algorithm</span>
+                        <span>Authentication</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: CEP Calculator -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <a href="https://www.youtube.com/watch?v=hoy_JURKhMI" target="_blank" class="youtube-overlay" title="Watch Demo">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="project-header">
+                        <i class="fas fa-map-marked-alt project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/NinkatS/CEP-Calculator" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/watch?v=hoy_JURKhMI" target="_blank" title="Watch Demo"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <h3>CEP Calculator</h3>
+                    <p class="project-period">Spring 2025</p>
+                    <p>
+                        Developed an Android mobile app calculating Circular Error Probable (CEP) by 
+                        collecting 50-100 location points per session using Google Maps API, enabling GPS 
+                        accuracy validation in real-time. Implemented Haversine algorithms and visualized 
+                        CEP circle on MapView, improving measurement reliability by 95%.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Kotlin</span>
+                        <span>Android Studio</span>
+                        <span>Google Maps API</span>
+                        <span>XML</span>
+                        <span>Gradle</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: MindfulWalk -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <a href="https://www.youtube.com/watch?v=IhD4RkFLyrg" target="_blank" class="youtube-overlay" title="Watch Demo">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="project-header">
+                        <i class="fas fa-walking project-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/NinkatS/MindfulWalk" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.youtube.com/watch?v=IhD4RkFLyrg" target="_blank" title="Watch Demo"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <h3>MindfulWalk</h3>
+                    <p class="project-period">Spring 2024 • ACM Projects – UT Dallas</p>
+                    <p>
+                        Collaborated in full-stack development of a health-focused Android mobile app that 
+                        motivates users to enhance mental and physical well-being by exploring urban 
+                        environments, driving a 15% increase in daily step counts. Engineered real-time 
+                        pedometer analysis and designed user flows with Figma mockups.
                     </p>
                     <div class="tech-tags">
                         <span>Flutter</span>
                         <span>Dart</span>
-                        <span>WiFi API</span>
-                        <span>Location Services</span>
+                        <span>Firebase</span>
+                        <span>Google Cloud</span>
+                        <span>Figma</span>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 4: Escape Room Game -->
                 <div class="project-card">
+                    <!-- <div class="project-image-container">
+                        <img src="projects/escape-room.jpg" alt="Local Outdoor Escape Room Game" class="project-image">
+                        <a href="https://youtube.com/your-video-link" target="_blank" class="youtube-overlay" title="Watch Demo">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div> -->
                     <div class="project-header">
-                        <i class="fas fa-database project-icon"></i>
+                        <i class="fas fa-trophy project-icon"></i>
                         <div class="project-links">
-                            <a href="#" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                            <!-- <a href="#" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://youtube.com/your-video-link" target="_blank" title="Watch Demo"><i class="fab fa-youtube"></i></a> -->
                         </div>
                     </div>
-                    <h3>Device Management System</h3>
+                    <h3>Local Outdoor Escape Room Game</h3>
+                    <p class="project-period">November 2023 • 2nd place, Local Capstone Idea Hackathon</p>
                     <p>
-                        Built a full-featured device management platform with client device screens, 
-                        status tracking, and real-time updates. Implemented StatefulWidget patterns, 
-                        navigation flows, and comprehensive error handling for robust application performance.
+                        Innovated a design of the Local Outdoor Escape Room Game mobile app and created 
+                        wireframes and UI mockups with thorough user needs modeling and field studies, 
+                        receiving a business offer from judges in industry.
                     </p>
                     <div class="tech-tags">
-                        <span>Flutter</span>
-                        <span>State Management</span>
-                        <span>MySQL</span>
-                        <span>REST API</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-code project-icon"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Android Native Development</h3>
-                    <p>
-                        Developed Android applications with complex build configurations, module integration, 
-                        and native features. Worked with Kotlin, Java, and Android Studio to create 
-                        high-performance applications with seamless user interactions.
-                    </p>
-                    <div class="tech-tags">
-                        <span>Android</span>
-                        <span>Kotlin</span>
-                        <span>Java</span>
-                        <span>Android Studio</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-network-wired project-icon"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank" title="View on GitHub"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Network Connectivity Module</h3>
-                    <p>
-                        Created a comprehensive networking solution featuring WiFi detection, QR code-based 
-                        connection, and network status monitoring. Implemented permission workflows and 
-                        user-friendly alert dialogs for enhanced accessibility.
-                    </p>
-                    <div class="tech-tags">
-                        <span>Flutter</span>
-                        <span>Network APIs</span>
-                        <span>QR Scanner</span>
-                        <span>Permissions</span>
+                        <span>UI/UX Design</span>
+                        <span>Figma</span>
+                        <span>User Research</span>
+                        <span>Wireframing</span>
                     </div>
                 </div>
 
@@ -244,56 +327,61 @@
                     <div class="skill-items">
                         <span>Flutter</span>
                         <span>Dart</span>
-                        <span>Android</span>
+                        <span>Swift</span>
                         <span>Kotlin</span>
-                        <span>Java</span>
-                        <span>iOS Development</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-items">
-                        <span>Dart</span>
-                        <span>Java</span>
-                        <span>C++</span>
-                        <span>Kotlin</span>
-                        <span>Python</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Backend & Databases</h3>
-                    <div class="skill-items">
-                        <span>MySQL</span>
-                        <span>Firebase</span>
-                        <span>REST APIs</span>
-                        <span>Database Design</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-                    <div class="skill-items">
-                        <span>Git</span>
                         <span>Android Studio</span>
-                        <span>VS Code</span>
-                        <span>GitHub</span>
-                        <span>Firebase Console</span>
                         <span>Xcode</span>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code"></i> Development Practices</h3>
+                    <h3><i class="fas fa-code"></i> Languages</h3>
                     <div class="skill-items">
-                        <span>Version Control</span>
-                        <span>Agile Development</span>
-                        <span>Code Review</span>
-                        <span>Testing & Debugging</span>
-                        <span>CI/CD</span>
+                        <span>Dart</span>
+                        <span>Swift</span>
+                        <span>Kotlin</span>
+                        <span>Java</span>
+                        <span>C#</span>
+                        <span>C++</span>
+                        <span>C</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database & Cloud</h3>
+                    <div class="skill-items">
+                        <span>MySQL</span>
+                        <span>SQLite</span>
+                        <span>Firebase</span>
+                        <span>AWS</span>
+                        <span>Google Cloud</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Frameworks & Tools</h3>
+                    <div class="skill-items">
+                        <span>React</span>
+                        <span>Git</span>
+                        <span>Figma</span>
+                        <span>Penpot</span>
+                        <span>Tailwind CSS</span>
+                        <span>.NET</span>
+                        <span>Unity</span>
+                        <span>Jira</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Operating Systems</h3>
+                    <div class="skill-items">
+                        <span>Linux</span>
+                        <span>UNIX</span>
+                        <span>Windows</span>
+                        <span>Mac OSX</span>
                     </div>
                 </div>
 
@@ -301,8 +389,8 @@
                     <h3><i class="fas fa-globe"></i> Other Skills</h3>
                     <div class="skill-items">
                         <span>UI/UX Design</span>
-                        <span>Problem Solving</span>
-                        <span>Technical Writing</span>
+                        <span>REST APIs</span>
+                        <span>TestFlight</span>
                         <span>Bilingual (EN/KO)</span>
                     </div>
                 </div>
@@ -325,7 +413,15 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            <a href="mailto:sjscom77@gmail.com">sjscom77@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:469-269-8515">469-269-8515</a>
                         </div>
                     </div>
                     
@@ -341,7 +437,7 @@
                         <i class="fab fa-linkedin"></i>
                         <div>
                             <h4>LinkedIn</h4>
-                            <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                            <a href="https://linkedin.com/in/sojung-shin-cs/" target="_blank">linkedin.com/in/sojung-shin-cs/</a>
                         </div>
                     </div>
                 </div>
@@ -349,10 +445,11 @@
                 <div class="contact-cta">
                     <p>
                         I'm currently seeking opportunities to apply my mobile development skills 
-                        in a professional environment. If you're looking for a dedicated developer 
-                        who brings energy, innovation, and technical expertise, let's connect!
+                        in a professional environment. With a strong foundation in Flutter, Swift, 
+                        and cross-platform development, I bring energy, innovation, and technical 
+                        expertise to every project. Let's connect!
                     </p>
-                    <a href="mailto:your.email@example.com" class="btn btn-primary">Send Message</a>
+                    <a href="mailto:sjscom77@gmail.com" class="btn btn-primary">Send Message</a>
                 </div>
             </div>
         </div>
@@ -361,11 +458,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. Built with passion and code.</p>
+            <p>&copy; 2025 Sojung Shin. Built with passion and code.</p>
             <div class="social-links">
                 <a href="https://github.com/ninkats" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/sojung-shin-cs/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:sjscom77@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
