@@ -421,6 +421,7 @@ section {
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .timeline-content h3 {
@@ -439,6 +440,78 @@ section {
     color: var(--gray-text);
     line-height: 1.8;
     margin-bottom: 1rem;
+}
+
+/* Timeline with Small Video Thumbnail */
+.timeline-header-with-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.timeline-info {
+    flex: 1;
+}
+
+.timeline-video-small {
+    flex-shrink: 0;
+}
+
+.video-thumbnail-link {
+    position: relative;
+    display: block;
+    width: 160px;
+    height: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumbnail-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(99, 102, 241, 0.3);
+}
+
+.video-thumbnail-small {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.video-thumbnail-link:hover .video-thumbnail-small {
+    filter: brightness(0.8);
+}
+
+/* Small Play Button */
+.play-button-small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 0, 0, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.video-thumbnail-link:hover .play-button-small {
+    background: rgb(255, 0, 0);
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+.play-button-small i {
+    margin-left: 2px; /* YouTube 아이콘 중앙 정렬 */
 }
 
 .tech-tags {
@@ -811,6 +884,30 @@ section {
     .hero-social {
         justify-content: center;
     }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+
+    .timeline-dot {
+        left: 1px;
+    }
+
+    .timeline-header-with-video {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .video-thumbnail-link {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 }
 
 @media (max-width: 480px) {
@@ -825,5 +922,9 @@ section {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .video-thumbnail-link {
+        max-width: 100%;
     }
 }
